@@ -14,6 +14,12 @@ $moduleclass_sfx = htmlspecialchars($params->get('moduleclass_sfx'));
 $show_read_more =  $params->get('show_read_more');
 $read_more_text =  $params->get('read_more_text');
 $read_more_link =  $params->get('read_more_link');
+
+$show_read_hire =  $params->get('show_read_hire');
+$read_more_hire =  $params->get('read_more_hire');
+$read_hire_link =  $params->get('read_hire_link');
+
+
 $header_text =  $params->get('header_text');
 $paragraph_text=  $params->get('paragraph_text');
 $center_text=  $params->get('center_text');
@@ -26,6 +32,7 @@ $foreground_image_width=  $params->get('foreground_image_width');
 $paragraphtextcolor=  $params->get('paragraphtextcolor');
 $headingtextcolor=  $params->get('headingtextcolor');
 $buttonstyle=  $params->get('buttonstyle','btn btn-primary btn-lg btn-color');
+$buttonstyle2=  $params->get('buttonstyle2','btn btn-primary btn-lg btn-color');
 
 // Include the syndicate functions only once
 require_once dirname(__FILE__).'/helper.php';
