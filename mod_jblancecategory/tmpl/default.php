@@ -34,7 +34,7 @@ $config = JblanceHelper::getConfig();
  
  //calculate span with
  $spanCount = 12 / $total_column;
- $span = 'col-md-'.$spanCount;
+ $span = 'col-sm-'.$spanCount;
  
  if(count($rows) > 0){ ?>
 
