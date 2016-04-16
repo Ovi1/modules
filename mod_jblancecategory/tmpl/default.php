@@ -52,10 +52,11 @@ $config = JblanceHelper::getConfig();
       <div>
 			<div class="<?php echo $span; ?>">
 				<a href="<?php echo $link_proj_categ;?>" class="jbl_subcatlink">
+                                    <i class="material-icons">keyboard_arrow_right</i>
 				<?php echo $sub->category; ?>
 				<?php
 				if($show_count){
-					echo '<span class="badge">'.$sub->thecount.'</span>';//' '('.$sub->thecount.')';
+					echo '<span class="label label-primary">'.$sub->thecount.'</span>';//' '('.$sub->thecount.')';
 				}
 				?>
 				</a>

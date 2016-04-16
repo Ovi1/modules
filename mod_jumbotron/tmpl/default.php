@@ -23,6 +23,7 @@ if ($foreground_image_width != 'auto' || $foreground_image_width != '') {
 <?php if (isset($background_image) && $background_image != '') : ?>
         .jumbotron{
             background:url(<?php echo JURI::base(); ?><?php echo $background_image; ?>) no-repeat <?php echo $x_pos; ?>px <?php echo $y_pos; ?>px;
+            background-size: cover;
         }
 <?php endif; ?>
 
@@ -51,7 +52,7 @@ if ($foreground_image_width != 'auto' || $foreground_image_width != '') {
 
 </style>
 <div class="jumbotron <?php echo $moduleclass_sfx; ?>">
-    <div class="blur"></div>
+    <!--<div class="blur"></div>-->
     <div class="container">
         <h1><?php echo $header_text; ?></h1>
         <p><?php echo $paragraph_text; ?></p>
