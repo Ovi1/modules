@@ -40,7 +40,7 @@ if($show_type == 'feed'){
       		<div class="media-body">
       <?php echo $row->title; ?>
       			<div>
-      	        	<i class="icon-calendar"></i> <?php echo $row->daysago; ?>
+      	        	<i class="material-icons">date_range</i><?php echo $row->daysago; ?>
       	        </div>
       		</div>
       	</div>
@@ -73,7 +73,7 @@ elseif($show_type == 'message'){
       }
       ?>
       			<div>
-      	        	<i class="icon-calendar"></i> <?php echo JHtml::_('date', $row->date_sent, $dformat, true); ?>
+      	        	<i class="material-icons">date_range</i> <?php echo JHtml::_('date', $row->date_sent, $dformat, true); ?>
       	        </div>
       		</div>
       	</div>
