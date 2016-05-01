@@ -52,7 +52,7 @@ if ($foreground_image_width != 'auto' || $foreground_image_width != '') {
 
 </style>
 <div class="jumbotron <?php echo $moduleclass_sfx; ?>">
-    <!--<div class="blur"></div>-->
+    <div class="blur"></div>
     <div class="container">
         <h1><?php echo $header_text; ?></h1>
         <p><?php echo $paragraph_text; ?></p>

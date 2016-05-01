@@ -30,7 +30,7 @@ $notifys = JblanceHelper::getFeeds($limit, 'notify'); //get the notificataion fe
 $newMsgs = JblanceHelper::countUnreadMsg();
 
 $link_messages = JRoute::_('index.php?option=com_jblance&view=message&layout=inbox');
-$link_home = 'index.php?Itemid=101';
+$link_home = '';
 $link_logout = JRoute::_('index.php?option=com_users&task=user.logout&' . JSession::getFormToken() . '=1&return=' . base64_encode($link_home));
 ?>
 <script type="text/javascript">
@@ -95,7 +95,7 @@ $link_logout = JRoute::_('index.php?option=com_users&task=user.logout&' . JSessi
                             <?php endif; ?>
                         </a>
 
-                        <div id="notify-menu" class="notify-menu" style="display: none;">
+                        <div id="notify-menu" class="notify-menu animated fadeInRight" style="display: none;">
                             <a href="javascript:void(0);" style="z-index:-1" onclick="javascript:showElement('notify-menu')">
                                 <i class="material-icons">close</i>                                    
 
