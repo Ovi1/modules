@@ -25,7 +25,7 @@
  $hasJBProfile = JblanceHelper::hasJBProfile($user->id);
 ?>
 <?php if($hasJBProfile) : ?>
-<ul class="inline">
+<ul class="list-inline">
 	<li><?php echo JText::_('MOD_JBLANCE_CURRENT_BALANCE'); ?>:</li>
 	<li><strong><?php echo JblanceHelper::formatCurrency($total_fund); ?></strong></li>
 </ul>
