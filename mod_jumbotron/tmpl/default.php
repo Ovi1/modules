@@ -23,7 +23,10 @@ if ($foreground_image_width != 'auto' || $foreground_image_width != '') {
 <?php if (isset($background_image) && $background_image != '') : ?>
         .jumbotron{
             background:url(<?php echo JURI::base(); ?><?php echo $background_image; ?>) no-repeat <?php echo $x_pos; ?>px <?php echo $y_pos; ?>px;
-            background-size: cover;
+            -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
         }
 <?php endif; ?>
 

@@ -15,7 +15,7 @@
 
  $config = JblanceHelper::getConfig();
  $showUsername 	= $config->showUsername;
- $nameOrUsername = ($showUsername) ? 'username' : 'name';
+ $nameOrUsername = ($showUsername) ? 'name' : 'username';
 
  $document = JFactory::getDocument();
  $direction = $document->getDirection();
@@ -36,7 +36,7 @@ for ($i=0, $n=count($rows); $i < $n; $i++) {
 	$row = $rows[$i];
 	$link_detail = JRoute::_('index.php?option=com_jblance&view=user&layout=viewprofile&id='.$row->user_id.$Itemid); ?>
 
-<div class="col-md-2 col-sm-4 col-xs-3">
+<div class="col-md-2 col-sm-4 col-xs-4">
   <div class="thumbnail">
     <a class="thumbnail" href= "<?php echo $link_detail?>">
     <?php
@@ -49,7 +49,7 @@ for ($i=0, $n=count($rows); $i < $n; $i++) {
 	<div class="media-body">
 		<h5 class="text-center">
       <?php echo LinkHelper::GetProfileLink($row->user_id, $row->$nameOrUsername); ?>
-    </h5>
+                </h5>
 		<?php 
 		if($show_rating == 1){ 
 			JblanceHelper::getAvarageRate($row->user_id, 1);
