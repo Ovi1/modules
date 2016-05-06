@@ -42,7 +42,7 @@ $lang = JFactory::getLanguage();
 $lang->load('com_jblance', JPATH_SITE);
 
 $totalServices = count($rows);
-$servicesPerSlide = 2;
+$servicesPerSlide = 4;
 $totalSlides = ceil($totalServices / $servicesPerSlide);
 ?>
 <script type="text/javascript">
@@ -81,7 +81,7 @@ $totalSlides = ceil($totalServices / $servicesPerSlide);
                   $link_view = JRoute::_('index.php?option=com_jblance&view=service&layout=viewservice&id=' . $row->id . $Itemid);
                   $sellerInfo = JFactory::getUser($row->user_id);
                   ?>						
-                  <div class="col-md-6 col-sm-6 col-xs-6">
+                  <div class="col-md-3 col-sm-3 col-xs-6">
                     <a href="<?php echo $link_view; ?>" class="thumbnail">
                       <img src="<?php echo $attachments[0]['location']; ?>" alt="image" style="max-height: 145px;" />
                       <div class="caption">
