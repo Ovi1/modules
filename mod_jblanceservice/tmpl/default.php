@@ -83,7 +83,7 @@ $totalSlides = ceil($totalServices / $servicesPerSlide);
                   ?>						
                   <div class="col-md-3 col-sm-3 col-xs-6">
                     <a href="<?php echo $link_view; ?>" class="thumbnail">
-                      <img src="<?php echo $attachments[0]['location']; ?>" alt="image" style="max-height: 145px;" />
+                      <img src="<?php echo $attachments[0]['location']; ?>" alt="image" />
                       <div class="caption">
                         <ul class="list-unstyled">
                           <li class="text-caption">
